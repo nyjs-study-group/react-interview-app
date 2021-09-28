@@ -1,25 +1,34 @@
+
+import Character from './components/character.component';
+
 import logo from './logo.svg';
 import './App.css';
 
+const charactersApiData = require('./mock-data/characters-all.json');
+
+
 function App() {
+  const name = 'Alfred E. Newman';
+  const characters = charactersApiData.results;
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Hello There {name}</h1>
+        {
+          characters.map(
+            character => (<Character name={character.name} age={22}/>)
+          )
+        }
+        <Character age={22}/>
+
       </header>
+      <div id="container">
+
+      </div>
     </div>
   );
 }
 
 export default App;
+;
