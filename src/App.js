@@ -4,12 +4,16 @@ import Character from './components/character.component';
 import logo from './logo.svg';
 import './App.css';
 
-const charactersApiData = require('./mock-data/characters-all.json');
+const charactersApiData =
+  require('./mock-data/characters-all.json');
 
 
 function App() {
   const name = 'Alfred E. Newman';
   const characters = charactersApiData.results;
+
+  // axios function here:
+  //
 
   return (
     <div className="App">
