@@ -24,6 +24,12 @@
   color: white;
 }
 
+.characters.list.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .App-link {
   color: #61dafb;
 }

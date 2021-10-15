@@ -1,0 +1,15 @@
+
+.character.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 15px auto;
+  border-radius: 10px;
+  width: 250px;
+  height: 100px;
+
+  background-color: #ddd;
+  color: #000;
+
+}
